@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Heebo', sans-serif ; 
+}
+.bhome body{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 70px auto 40px;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.bhome header{
+    grid-area: header;
+    z-index: 40000 ;
+    display: flex ;
+    min-height: 70px;
+    background-color: #001e57;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 3px;    
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header{
+    z-index: 40000 ;
+    display: flex ;
+    min-height: 70px;
+    background-color: #001e57;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 3px;    
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo{
+    padding: 7px;
+    display: flex;
+    align-items: center
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.nombre-empresa{
+    color: white;
+}
+nav a {
+    font-weight: 600;
+    padding-right: 5px;
+    text-decoration: none;
+    color:white;
+}
+nav a:hover{
+    color: red;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }   
+    .hero{
+        flex-direction: column;
+        height: 20px;
+        padding: 0px;
+    }
+}
+.bhome main{
+    background-color: rgb(183, 199, 224);
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px 100px 400px 400px;
+    grid-template-areas: 
+        "hero hero hero hero hero"
+        ". . parque . ."
+        ". img1 . img2 ."
+        ". . map . ."
+    ;
+    grid-gap: 20px;
+    column-gap: 40px;
+
+}
+footer{
+    background: #5c83d0;
+    width: 100%;
+    grid-area: footer;
+}
+.stadium{
+    background-color: lightpink;
+    width: 100%;
+    grid-area: parque;
+    
+}
+
+.hero{
+    background-image: url(https://imagenes.montevideo.com.uy/imgnoticias/201903/687469.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-textos {
+    padding: 100;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.image1 {
+    grid-area: img1;
+    height: 350px;
+    width: 600px;
+    box-shadow: 0px 0px 20px;
+    border-style: solid;
+    border-color: rgb(0, 30, 87);
+}
+.image2 {
+    grid-area: img2;
+    height: 350px;
+    width: 600px;
+    box-shadow: 0px 0px 20px;
+    border-style: solid;
+    border-color: rgb(0, 30, 87);
+    
+}
+.fotos img{
+    height: 360px;
+    width: 600px;
+    
+}
+iframe{
+    grid-area: map;
+}
+.results {
+    background-image: url(../images/background-index.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.partidos{
+   display: flex;
+}
+.torneo {
+    margin:100px 150px;
+}
+.torneo table{
+    background-color: rgb(189, 205, 251);
+    border-radius:  10px;
+    border: 5px ;
+    box-shadow: 0 0 10px;
+}
+.torneo h2{
+    background-color: rgb(247, 80, 80);
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0px;
+    border-radius:  6px;
+}
+.partidos  img{
+    height: 22px;  
+}
+.matches ul{ 
+    margin: 45px 200px;
+    padding-right: 160px;
+    margin-right: 0px;
+    border:1px solid black ;
+    font-size: 25px;
+    font-weight: 0;
+    border-radius:  6px;
+    border: 5px ;
+    box-shadow: 0 0 10px;
+    background-color: rgb(189, 205, 251);
+}
+.matches h3{
+    background-color: rgb(247, 80, 80);
+    margin-top: 97px;
+    margin-left: 300px; 
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 200px;
+    border-radius:  6px;
+    border: 5px ;
+    box-shadow: 0 0 20px;
+}
+.matches img{
+    margin-left: 200px;
+    margin-top: 100px;
+    height: 500;
+    width: 700;
+    border: 5px solid #000000;
+    border-radius:  6px;
+    box-shadow: 0 0 20px;
+}
+.history{
+    background: url(https://img.freepik.com/foto-gratis/vista-superior-viejos-periodicos-franceses_23-2149318857.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    border: 3px solid black;
+    border-radius:  6px;
+    backdrop-filter: blur(2px);
+    margin-top: 50px;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-top: 30px;  
+}
+.titles h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    
+}
+.titles p{
+    font-size: 20px ;
+    margin-top: 0px;
+}
+.prudencio{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.prudencio-text iframe{
+    height: 500px;
+    width: 1000px;
+}
+.prudencio-2 img{
+    margin-top: 60px;
+    height: 400px;
+    width: 450px;
+}
+.gallery{
+    margin: 0;
+    padding: 0;
+    height: 2300px;
+    
+}
+.gallery img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 6px;
+}
+.gallery p{
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-style: dotted;
+    margin: 0;
+}
+
+.contenedor-textos2{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    color: #000000;    
+    align-items: center;
+    font-family: "montserrat";
+    border-radius: 6px;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+}
+.contenedor-textos2 p{
+    font-size: 25px;
+    padding:0 ;
+    margin: 0;
+}
+.contenedor-textos2 h2{
+    font-size: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.contact {
+    height: 440px;
+    background-color: rgb(183, 199, 224);
+    margin: 0;
+    
+}
+.form{
+    width: 440px ;
+    height: 440px;
+    background: white;
+    border-radius: 8px ;
+    box-shadow: 0 0 40px -10px #000 ;
+    margin: 150px 200px;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: "montserrat";
+    position: relative;
+}
+.form h3{
+    color: #000;
+    margin: 10px 0px ;
+    padding-bottom: 10px;
+    color: gray;
+    border-bottom:  3px solid black;
+    
+}
+input{
+    width: 100% ;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "montserrat";
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+}
+input:focus{
+    border-bottom: 2px solid lightblue;
+}
+p:before{
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "montserrat";
+    border: 2px solid gray;
+    background: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover{
+    background: gray;
+    color: white;
+}
+.informacion{
+    display: flex;
+}
+.quienes{
+    width: 440px ;
+    height: 440px;
+    background: white;
+    border-radius: 8px ;
+    box-shadow: 0 0 40px -10px #000 ;
+    margin-top: 150px ;
+    margin-left: 200px;
+    padding: 20px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    font-family: "montserrat";
+    position: relative; 
+}
+.quienes h4{
+    font-size: 25px;
+}
+.quienes p{
+    font-size: 20px;
+}
+.datos ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+}
