@@ -6,47 +6,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/sortcut-icon.png">
     <title>Gallery</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href=""></a><img src="../images/sortcut-icon.png" alt="">
-            <h1 class="nombre-empresa">Hola Bolso</h1>
-        </div>
-        <nav>
-            <a href="../index.html" class="nav-link">Inicio</a>
-            <a href="../pages/results.html" class="nav-link">Results</a>
-            <a href="../pages/history.html" class="nav-link">Historia</a>
-            <a href="../pages/contact.html" class="nav-link">Contacto</a>
-        </nav>
-        
-
+        <nav class="navbar  navbar-dark fixed-top " style="background-color: #001e57;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" >
+                <img src="../images/sortcut-icon.png" alt="Logo" width="40" height="40" class="d-inline-block" class="d-flex align-content-between flex-wrap">
+                 Hola Bolso 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #011234;">
+                <div class="offcanvas-header" style="color: white;">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nuestras paginas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html"><kbd>Inicio</kbd></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/results.html">Resultados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/history.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main class="gallery">
         <div class="row">
-            <div class="column">
-                <p>La hinchada</p>
-                <img src="http://www.decano.com/uploads/imagenes/e0a6a474f439b9586981aa2421893ed7.JPG" alt="photo0">
+          <div class="col-lg-4 col-xs-12 mt-2">
+            <div class="card">
+              <div class="card-body">
+                La hinchada
+              </div>
+            </div> 
+                <img src="http://www.decano.com/uploads/imagenes/e0a6a474f439b9586981aa2421893ed7.JPG"alt="photo0">
                 <img src="http://www.decano.com/uploads/imagenes/250717f84cde7fccaf1db461656a545a.JPG" alt="photo1">
                 <img src="http://www.decano.com/uploads/imagenes/d2ec6cdcc07b3eb4046d2a8545e4ff24.JPG" alt="photo2">
                 <img src="http://www.decano.com/uploads/imagenes/a8f4202910f3481a7a55ad116b4f73a5.JPG" alt="photo3">
                 <img src="http://www.decano.com/uploads/imagenes/3ca33bb9516f5732bcd9f13e14137c4d.JPG" alt="photo4">
                 <img src="http://www.decano.com/uploads/imagenes/b07c505f3d421a6e6ada660e9c3d5ebc.JPG" alt="photo5">
-                
             </div>
-            <div class="column">
-                <p>Entrenamientos</p>
+            <div class="col-lg-4 col-xs-12 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  Entrenamientos
+                </div>
+              </div>
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/mvs5Ec1r5oeo506xas5XuroajLjJjYicN2Lgjbg3h69d02RJGNdvx8b4MhFjFfqe.jpeg" alt="photo6">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/YdlEgKG2WR0r4GJdkaBuN2bX7RrlPdcLiKjcYS2qwTxgsT7wn6LWPMeiEGtxyAzE.jpeg" alt="photo7">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/1gmyztGezrnbYu4OxqJMcMRmmcCgc01zfQptumAyXIUTkiIGThjInBjoAIWdww9d.jpeg" alt="photo8">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/BCweaNhgEeD6uB29sPAUCPaOc2XdvVJoaG8mlLkHALJ2HVbCQRaFxCFtk2qUj9mn.jpeg" alt="photo9">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/xyWVrzAllhgzVUD4XpRcmdKLiRi8tFpbxRWwmiUOHLYOb8w8QuMZemUClojBbZeb.jpeg" alt="photo10">
             </div>
-            <div class="column">
-                <p>Partidos</p>
+            <div class="col-lg-4 col-xs-12 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  Partidos
+                </div>
+              </div>
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/KjFiRrqizjtrlO3mXxQVDR6PxBQf8StBc0Vz4gq1ENkHE9PSnFBr0kPrPF3FTlRa.jpeg" alt="photo11">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/o69FtUSV6h0lo43SXhjKMQu2p3MNzCYsKqbV1QCRD3Rn3N05e6Mj2YMg6mv75aOZ.jpeg" alt="photo12">
                 <img src="https://cnf.nyc3.cdn.digitaloceanspaces.com/thumbs/normal/SMxfOFN9UBxUf6fo7SWUUMrCanQvMFXWTxrB62r5cGDCZ5XVevlpJB8yzy3gwgkO.jpeg" alt="photo13">
@@ -57,8 +93,47 @@
         
     </main>
     <footer>
-        <a href="./gallery.html">Volver arriba</a>
-        <a href="#">Nuestras Redes</a>
+      <div class="container-fluid">
+        <div class="row p-5 bg-dark text-white">
+          <div class="col-xs-12 col-lg-4">
+            <p class="h3">Hola Bolso</p>
+          </div>
+          <div class="col-xs-12 col-lg-4">
+            <p class="h5 mb-3">Paginas</p>
+            <div class="mb-2">
+            <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-secondary text-decoration-none" href="../pages/results.html">Resultados</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../pages/history.html">Historia</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="../pages/gallery.html">Galeria</a>
+                  </div>
+          </div>
+          <div class="col-xs-12 col-lg-4">
+            <p class="h5 mb-3"> <a class="text-decoration-none text-white" href="../pages/contact.html">Conatcto</a></p>
+            <div class="mb-2">
+              <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-secondary text-decoration-none" href="#">HolaBolso@gmail.com</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-secondary text-decoration-none" href="#">099301343</a>
+            </div>
+            <div class="mb-2">
+              <a class="text-secondary text-decoration-none" href="#">Av.Italia 1214</a>
+            </div>
+            </div>
+          </div>
+        </div>
+       </div>
     </footer>
+</div>
+    </footer>
+   <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

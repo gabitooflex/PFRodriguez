@@ -6,22 +6,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..//css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/sortcut-icon.png">
     <title>History</title>
 </head>
 <body class="history">
     <header>
-        <div class="logo">
-            <a href=""></a><img src="../images/sortcut-icon.png" alt="">
-            <h1 class="nombre-empresa">Hola Bolso</h1>
-        </div>
-        <nav>
-            <a href="../index.html" class="nav-link">Inicio</a>
-            <a href="../pages/results.html" class="nav-link">Results</a>
-            <a href="../pages/gallery.html" class="nav-link">Galeria</a>
-            <a href="../pages/contact.html" class="nav-link">Contacto</a>
-        </nav>
+        <nav class="navbar  navbar-dark fixed-top " style="background-color: #001e57;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" >
+                <img src="../images/sortcut-icon.png" alt="Logo" width="40" height="40" class="d-inline-block" class="d-flex align-content-between flex-wrap">
+                 Hola Bolso 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: #011234;">
+                <div class="offcanvas-header" style="color: white;">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nuestras paginas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html"><kbd>Inicio</kbd></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/results.html">Resultados</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/history.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="..//pages/contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
         </header>
         <main>
             
@@ -41,8 +68,47 @@
             </section>
         </main>
         <footer>
-            <a href="./history.html">Volver arriba</a>
-            <a href="#">Nuestras Redes</a>
+          <div class="container-fluid">
+            <div class="row p-5 bg-dark text-white">
+              <div class="col-xs-12 col-lg-4">
+                <p class="h3">Hola Bolso</p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p class="h5 mb-3">Paginas</p>
+                <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../index.html">Inicio</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="../pages/results.html">Resultados</a>
+                  </div>
+                  <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="../pages/history.html">Historia</a>
+                    </div>
+                    <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="../pages/gallery.html">Galeria</a>
+                      </div>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p class="h5 mb-3"> <a class="text-decoration-none text-white" href="../pages/contact.html">Conatcto</a></p>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">HolaBolso@gmail.com</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">099301343</a>
+                </div>
+                <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">Av.Italia 1214</a>
+                </div>
+                </div>
+              </div>
+            </div>
+           </div>
         </footer>
+    </div>
+        </footer>
+        <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

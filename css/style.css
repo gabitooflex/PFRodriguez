@@ -2,9 +2,10 @@
     margin: 0;
 }
 body{
-    font-family: 'Heebo', sans-serif ; 
+    font-family: 'Heebo', sans-serif !important ;
+    background-color: rgb(189, 205, 251);
 }
-.bhome body{  
+.grid-container1{  
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
     grid-template-rows: 70px auto 40px;
@@ -14,71 +15,16 @@ body{
         "footer footer footer footer"
     ;
 }
-.bhome header{
+.grid-container1 header{
     grid-area: header;
-    z-index: 40000 ;
-    display: flex ;
-    min-height: 70px;
     background-color: #001e57;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 3px;    
-    top: 0;
-    left: 0;
-    width: 100%;
 }
-header{
-    z-index: 40000 ;
-    display: flex ;
-    min-height: 70px;
-    background-color: #001e57;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 3px;    
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.logo{
-    padding: 7px;
-    display: flex;
-    align-items: center
-}
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-}
-.nombre-empresa{
-    color: white;
-}
-nav a {
-    font-weight: 600;
-    padding-right: 5px;
-    text-decoration: none;
-    color:white;
-}
-nav a:hover{
-    color: red;
-}
-@media (max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }   
-    .hero{
-        flex-direction: column;
-        height: 20px;
-        padding: 0px;
-    }
-}
-.bhome main{
+.grid-container1 main{
     background-color: rgb(183, 199, 224);
     width: 100%;
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     grid-template-rows: 400px 100px 400px 400px;
     grid-template-areas: 
         "hero hero hero hero hero"
@@ -90,42 +36,72 @@ nav a:hover{
     column-gap: 40px;
 
 }
-footer{
-    background: #5c83d0;
-    width: 100%;
+.grid-container1 footer{
     grid-area: footer;
+    display: flex;
+    background: #002F87;;
+    width: 100%;   
+    align-items: center;
+}
+footer {
+    margin-top: 120px;
 }
 .stadium{
-    background-color: lightpink;
     width: 100%;
-    grid-area: parque;
-    
+    grid-area: parque; 
 }
 
 .hero{
-    background-image: url(https://imagenes.montevideo.com.uy/imgnoticias/201903/687469.JPG);
+    grid-area: hero;
+    background-image: url(https://imagenes.montevideo.com.uy/imgnoticias/201903/687469.JPG) ;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    grid-area: hero;
+    background-position: center center ;
+    background-repeat: no-repeat;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contenedor-textos {
-    padding: 100;
-    height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
 }
-.h1{
-    font-size: 50px;
+.contenedor-textos h2{
+    font-size: 3vw;
     font-weight: 800;
 }
+.hero p{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px;
+    border-radius:  6px;
+    box-shadow: 0 0 10px #222 ;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.hero a{
+    margin: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 10 ;
+    text-decoration: blink ;
+    background-color: black ;
+    padding: 0.005px 0.005px
+}
+.stadium h3{
+    margin: 20px;
+    font-size: 35px;
+}
+
 .image1 {
     grid-area: img1;
     height: 350px;
@@ -152,17 +128,20 @@ iframe{
     grid-area: map;
 }
 .results {
+    font-family: 'Heebo', sans-serif ; 
     background-image: url(../images/background-index.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .partidos{
    display: flex;
+   margin-top: 30px;
 }
 .torneo {
-    margin:100px 150px;
+    margin:50px 150px;
 }
 .torneo table{
+    margin-top: 40px;
     background-color: rgb(189, 205, 251);
     border-radius:  10px;
     border: 5px ;
@@ -172,27 +151,20 @@ iframe{
     background-color: rgb(247, 80, 80);
     font-size: 40px;
     font-weight: 500;
-    margin-top: 0px;
     border-radius:  6px;
 }
 .partidos  img{
-    height: 22px;  
+    height: 25px;  
 }
-.matches ul{ 
-    margin: 45px 200px;
-    padding-right: 160px;
-    margin-right: 0px;
-    border:1px solid black ;
+.matches ol{ 
+    margin: 40px 0 0 200px ;
     font-size: 25px;
-    font-weight: 0;
     border-radius:  6px;
     border: 5px ;
-    box-shadow: 0 0 10px;
-    background-color: rgb(189, 205, 251);
 }
 .matches h3{
     background-color: rgb(247, 80, 80);
-    margin-top: 97px;
+    margin-top: 50px;
     margin-left: 300px; 
     margin-bottom: 0px;
     font-size: 40px;
@@ -203,13 +175,10 @@ iframe{
     box-shadow: 0 0 20px;
 }
 .matches img{
-    margin-left: 200px;
-    margin-top: 100px;
-    height: 500;
+    margin: 10px 0 20px 200px;
+    height: 480;
     width: 700;
-    border: 5px solid #000000;
-    border-radius:  6px;
-    box-shadow: 0 0 20px;
+   
 }
 .history{
     background: url(https://img.freepik.com/foto-gratis/vista-superior-viejos-periodicos-franceses_23-2149318857.jpg?w=2000);
@@ -224,10 +193,9 @@ iframe{
     border: 3px solid black;
     border-radius:  6px;
     backdrop-filter: blur(2px);
-    margin-top: 50px;
     margin-right: 600px;
     margin-left: 600px;
-    margin-top: 30px;  
+    margin-top: 90px;  
 }
 .titles h2{
     font-size: 40px;
@@ -241,7 +209,7 @@ iframe{
     margin-top: 0px;
 }
 .prudencio{
-    margin-top: 90px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -249,25 +217,21 @@ iframe{
 .prudencio-text iframe{
     height: 500px;
     width: 1000px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px;
 }
 .prudencio-2 img{
-    margin-top: 60px;
+    margin-top: 30px;
     height: 400px;
     width: 450px;
-}
-.gallery{
-    margin: 0;
-    padding: 0;
-    height: 2300px;
-    
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
 }
 .gallery img{
     width: 100%;
 }
-.row{
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
+.gallery{
+    margin-top: 60px;
 }
 .column{
     flex: 25%;
@@ -276,125 +240,16 @@ iframe{
 .column img{
     margin-top: 6px;
 }
-.gallery p{
+.column p{
     font-size: 30px;
     font-weight: 500;
     border: 1px solid black;
     border-style: dotted;
     margin: 0;
 }
+.hero-contacto{
+    margin-top: 100px;
+   
+}
 
-.contenedor-textos2{
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    color: #000000;    
-    align-items: center;
-    font-family: "montserrat";
-    border-radius: 6px;
-    margin-left: 350px;
-    margin-right: 350px;
-    text-align: center;
-}
-.contenedor-textos2 p{
-    font-size: 25px;
-    padding:0 ;
-    margin: 0;
-}
-.contenedor-textos2 h2{
-    font-size: 40px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-.contact {
-    height: 440px;
-    background-color: rgb(183, 199, 224);
-    margin: 0;
-    
-}
-.form{
-    width: 440px ;
-    height: 440px;
-    background: white;
-    border-radius: 8px ;
-    box-shadow: 0 0 40px -10px #000 ;
-    margin: 150px 200px;
-    padding: 20px 30px;
-    max-width: calc(100vw -40px);
-    box-sizing: border-box;
-    font-family: "montserrat";
-    position: relative;
-}
-.form h3{
-    color: #000;
-    margin: 10px 0px ;
-    padding-bottom: 10px;
-    color: gray;
-    border-bottom:  3px solid black;
-    
-}
-input{
-    width: 100% ;
-    padding: 10px;
-    box-sizing: border-box;
-    background: none;
-    outline: none;
-    resize: none;
-    border: 0;
-    font-family: "montserrat";
-    transition: all .3s;
-    border-bottom: 2px solid grey;
-}
-input:focus{
-    border-bottom: 2px solid lightblue;
-}
-p:before{
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-    color: gray;
-}
-button{
-    float: right;
-    padding: 8px 12px;
-    margin: 8px 0 0;
-    font-family: "montserrat";
-    border: 2px solid gray;
-    background: 0;
-    cursor: pointer;
-    transition: all .3s;
-}
-button:hover{
-    background: gray;
-    color: white;
-}
-.informacion{
-    display: flex;
-}
-.quienes{
-    width: 440px ;
-    height: 440px;
-    background: white;
-    border-radius: 8px ;
-    box-shadow: 0 0 40px -10px #000 ;
-    margin-top: 150px ;
-    margin-left: 200px;
-    padding: 20px 30px;
-    max-width: calc(100vw -40px);
-    box-sizing: border-box;
-    font-family: "montserrat";
-    position: relative; 
-}
-.quienes h4{
-    font-size: 25px;
-}
-.quienes p{
-    font-size: 20px;
-}
-.datos ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-decoration: none;
-}
+
