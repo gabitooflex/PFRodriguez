@@ -3,7 +3,10 @@
 }
 body{
     font-family: 'Heebo', sans-serif !important ;
-    background-color: rgb(189, 205, 251);
+    background: rgb(2,0,36);
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(65, 120, 188) 14%, rgb(56, 118, 200) 22%, rgb(115, 128, 249) 55%, rgb(66, 108, 233) 82%);
+    overflow-x: hidden;
 }
 .grid-container1{  
     display: grid;
@@ -17,10 +20,8 @@ body{
 }
 .grid-container1 header{
     grid-area: header;
-    background-color: #001e57;
 }
 .grid-container1 main{
-    background-color: rgb(183, 199, 224);
     width: 100%;
     grid-area: main;
     display: grid;
