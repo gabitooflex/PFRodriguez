@@ -8,9 +8,11 @@ body{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(65, 120, 188) 14%, rgb(56, 118, 200) 22%, rgb(115, 128, 249) 55%, rgb(66, 108, 233) 82%);
     overflow-x: hidden;
 }
+header{
+    margin-bottom: 65px;
+}
 
 .hero2{
-    margin-top: 65px;
     background-image: url(https://pbs.twimg.com/media/FwD2KlTWYAAh6cr?format=jpg&name=large);
     background-size: cover;
     background-position: center;
@@ -66,48 +68,33 @@ footer {
    display: flex;
    margin-top: 30px;
 }
-.torneo {
-    margin:50px 150px;
-}
-.torneo table{
-    margin-top: 40px;
+.row h3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
     background-color: rgb(189, 205, 251);
-    border-radius:  10px;
-    border: 5px ;
-    box-shadow: 0 0 10px;
+    border-radius: 8px;
 }
-.torneo h2{
-    background-color: rgb(247, 80, 80);
-    font-size: 40px;
-    font-weight: 500;
-    border-radius:  6px;
-}
-.partidos  img{
+.torneo  img{
     height: 25px;  
 }
+.torneo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.matches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .matches ol{ 
-    margin: 40px 0 0 200px ;
-    font-size: 25px;
+    margin-top: 20px;
+    font-size: 18px;
     border-radius:  6px;
     border: 5px ;
-}
-.matches h3{
-    background-color: rgb(247, 80, 80);
-    margin-top: 50px;
-    margin-left: 300px; 
-    margin-bottom: 0px;
-    font-size: 40px;
-    font-weight: 500;
-    margin-right: 200px;
-    border-radius:  6px;
-    border: 5px ;
-    box-shadow: 0 0 20px;
-}
-.matches img{
-    margin: 10px 0 20px 200px;
-    height: 480;
-    width: 700;
-   
+    width:90%;
 }
 .history{
     background: url(https://img.freepik.com/foto-gratis/vista-superior-viejos-periodicos-franceses_23-2149318857.jpg?w=2000);
