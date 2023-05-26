@@ -8,126 +8,54 @@ body{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(65, 120, 188) 14%, rgb(56, 118, 200) 22%, rgb(115, 128, 249) 55%, rgb(66, 108, 233) 82%);
     overflow-x: hidden;
 }
-.grid-container1{  
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows: 70px auto 40px;
-    grid-template-areas: 
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"
-    ;
+
+.hero2{
+    margin-top: 65px;
+    background-image: url(https://pbs.twimg.com/media/FwD2KlTWYAAh6cr?format=jpg&name=large);
+    background-size: cover;
+    background-position: center;
 }
-.grid-container1 header{
-    grid-area: header;
+.parque h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
-.grid-container1 main{
-    width: 100%;
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: 400px 100px 400px 400px;
-    grid-template-areas: 
-        "hero hero hero hero hero"
-        ". . parque . ."
-        ". img1 . img2 ."
-        ". . map . ."
-    ;
-    grid-gap: 20px;
-    column-gap: 40px;
+.parque p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.stadium{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stadium img{
+    height: 280px;
+    width: 500px;
+    box-shadow: 0px 0px 20px;
+    border-style: solid;
+    border-color: rgb(0, 30, 87);
+    margin: 0;
+    
 
 }
-.grid-container1 footer{
-    grid-area: footer;
-    display: flex;
-    background: #002F87;;
-    width: 100%;   
-    align-items: center;
+@media (max-width:700px){
+    .stadium img{
+        height: 180;
+        width: 290px;
+        margin-top: 30px;
+    }
 }
+
 footer {
     margin-top: 120px;
 }
-.stadium{
-    width: 100%;
-    grid-area: parque; 
-}
 
-.hero{
-    grid-area: hero;
-    background-image: url(https://imagenes.montevideo.com.uy/imgnoticias/201903/687469.JPG) ;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center ;
-    background-repeat: no-repeat;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor-textos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-.contenedor-textos h2{
-    font-size: 3vw;
-    font-weight: 800;
-}
-.hero p{
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 3px;
-    border-radius:  6px;
-    box-shadow: 0 0 10px #222 ;
-    backdrop-filter: blur(10px);
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-.hero a{
-    margin: 5px;
-    color: white;
-    font-size: 18px;
-    font-weight: 10 ;
-    text-decoration: blink ;
-    background-color: black ;
-    padding: 0.005px 0.005px
-}
-.stadium h3{
-    margin: 20px;
-    font-size: 35px;
-}
-
-.image1 {
-    grid-area: img1;
-    height: 350px;
-    width: 600px;
-    box-shadow: 0px 0px 20px;
-    border-style: solid;
-    border-color: rgb(0, 30, 87);
-}
-.image2 {
-    grid-area: img2;
-    height: 350px;
-    width: 600px;
-    box-shadow: 0px 0px 20px;
-    border-style: solid;
-    border-color: rgb(0, 30, 87);
-    
-}
-.fotos img{
-    height: 360px;
-    width: 600px;
-    
-}
-iframe{
-    grid-area: map;
-}
 .results {
     font-family: 'Heebo', sans-serif ; 
     background-image: url(../images/background-index.jpeg);
@@ -252,5 +180,3 @@ iframe{
     margin-top: 100px;
    
 }
-
-
