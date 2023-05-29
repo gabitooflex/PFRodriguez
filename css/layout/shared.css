@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+body header {
+  margin-bottom: 65px;
+}
+body footer {
+  margin-top: 120px;
+}
+
+/*# sourceMappingURL=shared.css.map */

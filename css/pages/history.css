@@ -1,0 +1,19 @@
+.history {
+  background: url(https://img.freepik.com/foto-gratis/vista-superior-viejos-periodicos-franceses_23-2149318857.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .prudencio-img {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+.history .text-prudencio p {
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+}
+.history .text-prudencio h4 {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=history.css.map */

@@ -1,3 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Source+Sans+Pro:ital@1&display=swap");
+* {
+  margin: 0;
+}
 
+body {
+  overflow-x: hidden;
+}
+body header {
+  margin-bottom: 65px;
+}
+body footer {
+  margin-top: 120px;
+}
+
+body {
+  font-family: "Heebo", sans-serif !important;
+}
+
+main .hero2 {
+  background-image: url(https://pbs.twimg.com/media/FwD2KlTWYAAh6cr?format=jpg&name=large);
+  background-size: cover;
+  background-position: center;
+}
+main .hero2 button a {
+  text-decoration: none;
+  color: white;
+}
+main .parque h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+main .parque p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+main .stadium {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .stadium img {
+  height: 280px;
+  width: 500px;
+  box-shadow: 0px 0px 20px;
+  border-style: solid;
+  border-color: rgb(0, 30, 87);
+  margin: 0;
+}
+@media (max-width: 700px) {
+  main .stadium img {
+    height: 200;
+    width: 320px;
+    margin-top: 30px;
+  }
+}
+
+main .row h3 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  color: #006ea9;
+}
+main .row a {
+  text-decoration: none;
+}
+main .torneo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .torneo img {
+  height: 25px;
+}
+main .torneo .matchces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .torneo .matchces ol {
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 5px;
+  width: 90%;
+}
+
+.history {
+  background: url(https://img.freepik.com/foto-gratis/vista-superior-viejos-periodicos-franceses_23-2149318857.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.history .prudencio-img {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+}
+.history .text-prudencio p {
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+}
+.history .text-prudencio h4 {
+  font-weight: 600;
+}
+
+.gallery {
+  margin-top: 60px;
+}
+.gallery img {
+  width: 100%;
+  margin-right: 10px;
+}
+
+main .hero-contacto {
+  margin-top: 40px;
+}
 
 /*# sourceMappingURL=app.css.map */

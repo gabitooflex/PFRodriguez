@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    header{
+        margin-bottom: 65px;
+    }
+    footer {
+        margin-top: 120px;
+    }
+}
+@mixin posicionamiento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

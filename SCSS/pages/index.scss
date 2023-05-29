@@ -1,0 +1,39 @@
+main{
+    .hero2{
+        background-image: url(https://pbs.twimg.com/media/FwD2KlTWYAAh6cr?format=jpg&name=large);
+        background-size: cover;
+        background-position: center;
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .parque{
+        h3{
+            @include posicionamiento;
+            margin-top: 20px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        p{
+            @include posicionamiento;
+            margin-bottom: 40px;
+        }
+    }
+    .stadium{
+        @include posicionamiento;
+        img{
+            height: 280px;
+            width: 500px;
+            box-shadow: 0px 0px 20px;
+            border-style: solid;
+            border-color: $color-primary;
+            margin: 0;
+            @media (max-width:700px){
+                height: 200;
+                width: 320px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
