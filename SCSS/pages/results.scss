@@ -7,25 +7,28 @@ main{
         justify-content: center;
         border-radius: 8px;
         color: $color-secondary;
-        }
         a{
-            text-decoration: none;
+            text-decoration: none
         }
+        }
+         a:hover{
+                font-size: 30px ;
+          }
     }
     .torneo {
         @include posicionamiento;
         img{
         height: 25px; 
         }
-        .matchces{
-            @include posicionamiento;
-            ol{
-                margin-top: 20px;
-                font-size: 18px;
-                border-radius:  6px;
-                border: 5px ;
-                width:90%;
-            }
+    }
+    .matches{
+        @include posicionamiento;
+        ol{
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius:  6px;
+            border: 5px ;
+            width:90%;
         }
     }
       

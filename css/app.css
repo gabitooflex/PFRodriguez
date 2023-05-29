@@ -9,8 +9,15 @@ body {
 body header {
   margin-bottom: 65px;
 }
-body footer {
+body header a:hover {
+  transform: translate(4px);
+}
+
+footer {
   margin-top: 120px;
+}
+footer a:hover {
+  color: lightcoral !important;
 }
 
 body {
@@ -68,8 +75,11 @@ main .row h3 {
   border-radius: 8px;
   color: #006ea9;
 }
-main .row a {
+main .row h3 a {
   text-decoration: none;
+}
+main .row a:hover {
+  font-size: 30px;
 }
 main .torneo {
   display: flex;
@@ -79,12 +89,12 @@ main .torneo {
 main .torneo img {
   height: 25px;
 }
-main .torneo .matchces {
+main .matches {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-main .torneo .matchces ol {
+main .matches ol {
   margin-top: 20px;
   font-size: 18px;
   border-radius: 6px;
@@ -120,6 +130,10 @@ main .torneo .matchces ol {
 
 main .hero-contacto {
   margin-top: 40px;
+}
+main button:hover {
+  background-color: #0048b5 !important;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=app.css.map */

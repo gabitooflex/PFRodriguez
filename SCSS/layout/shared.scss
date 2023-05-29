@@ -5,10 +5,17 @@ body{
     overflow-x: hidden;
     header{
         margin-bottom: 65px;
+         a:hover{
+            transform: translate(4px) ;
+        }
+    }
     }
     footer {
         margin-top: 120px;
-    }
+        a:hover{
+            color: lightcoral !important ;
+        }
+       
 }
 @mixin posicionamiento {
     display: flex;

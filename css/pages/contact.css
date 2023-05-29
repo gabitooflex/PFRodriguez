@@ -1,5 +1,9 @@
 main .hero-contacto {
   margin-top: 40px;
 }
+main button:hover {
+  background-color: #0048b5 !important;
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=contact.css.map */

@@ -8,8 +8,15 @@ body {
 body header {
   margin-bottom: 65px;
 }
-body footer {
+body header a:hover {
+  transform: translate(4px);
+}
+
+footer {
   margin-top: 120px;
+}
+footer a:hover {
+  color: lightcoral !important;
 }
 
 /*# sourceMappingURL=shared.css.map */
