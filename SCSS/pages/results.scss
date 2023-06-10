@@ -10,10 +10,11 @@ main{
         a{
             text-decoration: none
         }
+        &:hover{
+            font-size: 30px ;
         }
-         a:hover{
-                font-size: 30px ;
-          }
+        }
+            
     }
     .torneo {
         @include posicionamiento;
